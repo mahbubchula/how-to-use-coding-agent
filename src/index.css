@@ -1,0 +1,79 @@
+:root {
+  --bg-color: #121212;
+  --primary-orange: #FF5F1F;
+  --text-white: #FFFFFF;
+  --text-gray: #A0A0A0;
+  --card-bg: #1E1E1E;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-white);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+button {
+  background-color: var(--primary-orange);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e54e15;
+  transform: translateY(-2px);
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-orange);
+  margin-bottom: 2rem;
+}
+
+.instructor-section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.instructor-badge {
+  display: inline-block;
+  background: rgba(255, 95, 31, 0.15);
+  color: var(--primary-orange);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
